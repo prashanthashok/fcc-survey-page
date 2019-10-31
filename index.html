@@ -4,7 +4,140 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title>Document</title>
+    <title>Thattukadai - Survey Page</title>
+    <link rel="stylesheet" href="resources/css/style.css" />
   </head>
-  <body></body>
+  <body>
+    <main>
+      <h1 class="" id="title">
+        Thattukadai - Review your food
+      </h1>
+      <p id="description">How was your recent visit to Thattukadai?</p>
+
+      <form action="post" class="" id="survey-form">
+        <!-- Name -->
+        <label class="form-item" id="name-label" for="name">Name</label>
+        <input
+          class="form-item form-input"
+          type="text"
+          name="name"
+          id="name"
+          placeholder="Enter your name"
+          aria-placeholder="Enter your name"
+          required
+          aria-required="true"
+        />
+        <!-- Email -->
+        <label class="form-item form-input" id="email-label" for="email"
+          >Email</label
+        >
+        <input
+          class="form-item"
+          type="email"
+          name="email"
+          id="email"
+          placeholder="Enter your email"
+          aria-placeholder="Enter your email"
+          required
+          aria-required="true"
+        />
+
+        <!-- Age -->
+        <label for="number" class="form-item" id="number-label"
+          >Age (optional)</label
+        >
+        <input
+          class="form-item form-input"
+          type="number"
+          name="age"
+          id="number"
+          class="form-item"
+          placeholder="Enter your age between 10 and 99"
+          aria-placeholder="Enter your age between 10 and 99"
+          min="10"
+          max="99"
+        />
+
+        <!-- Dish checkbox -->
+
+        <label for="dish" class="form-item" id="dropdown-label"
+          >What dish did you have?</label
+        >
+        <input type="checkbox" class="input-check" name="dish" value="idly" />
+        Idly
+        <input type="checkbox" class="input-check" name="dish" value="dosa" />
+        Dosa
+        <input type="checkbox" class="input-check" name="dish" value="vada" />
+        Vada
+        <input type="checkbox" class="input-check" name="dish" value="pongal" />
+        Pongal
+        <input type="checkbox" class="input-check" name="dish" value="puttu" />
+        Puttu
+        <input type="checkbox" class="input-check" name="dish" value="coffee" />
+        Coffee
+        <input type="checkbox" class="input-check" name="dish" value="chai" />
+        Chai
+
+        <!-- Favorite Dish dropdown -->
+
+        <label for="favorite-dish" class="form-item" id="dropdown-label"
+          >What was your favorite dish?</label
+        >
+
+        <select name="favorite-dish" id="dropdown">
+          <option value disabled selected>Select your dish</option>
+          <option value="idly">Idly</option>
+          <option value="dosa">Dosa</option>
+          <option value="vada">Vada</option>
+          <option value="pongal">Pongal</option>
+          <option value="puttu">Puttu</option>
+          <option value="coffee">Coffee</option>
+          <option value="chai">Chai</option>
+        </select>
+
+        <!-- Recommend radio buttons -->
+        <label class="form-item" for="recommend-radio"
+          >Will you recommend Thattukadai to a friend?</label
+        >
+        <div class="form-item vertical-input">
+          <input
+            type="radio"
+            class="input-radio"
+            name="recommend-radio"
+            value="definitely"
+          />
+          Definitely
+          <input
+            type="radio"
+            class="input-radio"
+            name="recommend-radio"
+            value="maybe"
+          />
+          Maybe
+          <input
+            type="radio"
+            class="input-radio"
+            name="recommend-radio"
+            value="no"
+          />
+          Don't think so
+        </div>
+
+        <!-- Additional thoughts -->
+        <label for="additional-thoughts" id="additional-thoughts-label"
+          >Is there anything else you want to tell us about your visit?</label
+        >
+        <textarea
+          name="additional-thoughts"
+          class="input-area"
+          id=""
+          cols="30"
+          rows="10"
+        ></textarea>
+
+        <input type="submit" value="Submit review" id="submit" />
+      </form>
+    </main>
+    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+  </body>
 </html>
