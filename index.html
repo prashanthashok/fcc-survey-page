@@ -6,138 +6,213 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>Thattukadai - Survey Page</title>
     <link rel="stylesheet" href="resources/css/style.css" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Open+Sans|Yeon+Sung&display=swap"
+      rel="stylesheet"
+    />
   </head>
   <body>
-    <main>
-      <h1 class="" id="title">
-        Thattukadai - Review your food
-      </h1>
-      <p id="description">How was your recent visit to Thattukadai?</p>
+    <div class="container">
+      <main>
+        <h1 class="" id="title">
+          Thattukadai - Review your food
+        </h1>
+        <h3 class="description">How was your recent visit to Thattukadai?</h3>
 
-      <form action="post" class="" id="survey-form">
-        <!-- Name -->
-        <label class="form-item" id="name-label" for="name">Name</label>
-        <input
-          class="form-item form-input"
-          type="text"
-          name="name"
-          id="name"
-          placeholder="Enter your name"
-          aria-placeholder="Enter your name"
-          required
-          aria-required="true"
-        />
-        <!-- Email -->
-        <label class="form-item form-input" id="email-label" for="email"
-          >Email</label
-        >
-        <input
-          class="form-item"
-          type="email"
-          name="email"
-          id="email"
-          placeholder="Enter your email"
-          aria-placeholder="Enter your email"
-          required
-          aria-required="true"
-        />
-
-        <!-- Age -->
-        <label for="number" class="form-item" id="number-label"
-          >Age (optional)</label
-        >
-        <input
-          class="form-item form-input"
-          type="number"
-          name="age"
-          id="number"
-          class="form-item"
-          placeholder="Enter your age between 10 and 99"
-          aria-placeholder="Enter your age between 10 and 99"
-          min="10"
-          max="99"
-        />
-
-        <!-- Dish checkbox -->
-
-        <label for="dish" class="form-item" id="dropdown-label"
-          >What dish did you have?</label
-        >
-        <input type="checkbox" class="input-check" name="dish" value="idly" />
-        Idly
-        <input type="checkbox" class="input-check" name="dish" value="dosa" />
-        Dosa
-        <input type="checkbox" class="input-check" name="dish" value="vada" />
-        Vada
-        <input type="checkbox" class="input-check" name="dish" value="pongal" />
-        Pongal
-        <input type="checkbox" class="input-check" name="dish" value="puttu" />
-        Puttu
-        <input type="checkbox" class="input-check" name="dish" value="coffee" />
-        Coffee
-        <input type="checkbox" class="input-check" name="dish" value="chai" />
-        Chai
-
-        <!-- Favorite Dish dropdown -->
-
-        <label for="favorite-dish" class="form-item" id="dropdown-label"
-          >What was your favorite dish?</label
-        >
-
-        <select name="favorite-dish" id="dropdown">
-          <option value disabled selected>Select your dish</option>
-          <option value="idly">Idly</option>
-          <option value="dosa">Dosa</option>
-          <option value="vada">Vada</option>
-          <option value="pongal">Pongal</option>
-          <option value="puttu">Puttu</option>
-          <option value="coffee">Coffee</option>
-          <option value="chai">Chai</option>
-        </select>
-
-        <!-- Recommend radio buttons -->
-        <label class="form-item" for="recommend-radio"
-          >Will you recommend Thattukadai to a friend?</label
-        >
-        <div class="form-item vertical-input">
+        <form action="post" class="" id="survey-form">
+          <!-- Name -->
+          <label class="form-item" id="name-label" for="name">Name</label>
           <input
-            type="radio"
-            class="input-radio"
-            name="recommend-radio"
-            value="definitely"
+            class="form-item form-input"
+            type="text"
+            name="name"
+            id="name"
+            placeholder="Enter your name"
+            aria-placeholder="Enter your name"
+            required
+            aria-required="true"
           />
-          Definitely
+          <!-- Email -->
+          <label class="form-item" id="email-label" for="email">Email</label>
           <input
-            type="radio"
-            class="input-radio"
-            name="recommend-radio"
-            value="maybe"
+            class="form-item form-input"
+            type="email"
+            name="email"
+            id="email"
+            placeholder="Enter your email"
+            aria-placeholder="Enter your email"
+            required
+            aria-required="true"
           />
-          Maybe
-          <input
-            type="radio"
-            class="input-radio"
-            name="recommend-radio"
-            value="no"
-          />
-          Don't think so
-        </div>
 
-        <!-- Additional thoughts -->
-        <label for="additional-thoughts" id="additional-thoughts-label"
-          >Is there anything else you want to tell us about your visit?</label
+          <!-- Age -->
+          <label for="number" class="form-item" id="number-label"
+            >Age (optional)</label
+          >
+          <input
+            class="form-item form-input"
+            type="number"
+            name="age"
+            id="number"
+            class="form-item"
+            placeholder="Enter your age between 10 and 99"
+            aria-placeholder="Enter your age between 10 and 99"
+            min="10"
+            max="99"
+          />
+
+          <!-- Dish checkbox -->
+
+          <label for="dish" class="form-item" id="dropdown-label"
+            >What dish did you have?</label
+          >
+          <div class="check-box-container">
+            <input
+              type="checkbox"
+              class="form-item input-check"
+              name="idly"
+              value="idly"
+            />
+            Idly
+            <input
+              type="checkbox"
+              class="form-item input-check"
+              name="dish"
+              value="dosa"
+            />
+            Dosa
+            <input
+              type="checkbox"
+              class="form-item input-check"
+              name="dish"
+              value="vada"
+            />
+            Vada
+            <input
+              type="checkbox"
+              class="form-item input-check"
+              name="dish"
+              value="pongal"
+            />
+            Pongal
+            <input
+              type="checkbox"
+              class="form-item input-check"
+              name="dish"
+              value="puttu"
+            />
+            Puttu
+            <input
+              type="checkbox"
+              class="form-item input-check"
+              name="dish"
+              value="coffee"
+            />
+            Coffee
+            <input
+              type="checkbox"
+              class="form-item input-check"
+              name="dish"
+              value="chai"
+            />
+            Chai
+          </div>
+          <!-- Favorite Dish dropdown -->
+
+          <label for="favorite-dish" class="form-item" id="dropdown-label"
+            >What was your favorite dish?</label
+          >
+
+          <select
+            name="favorite-dish"
+            class="form-item form-input"
+            id="dropdown"
+          >
+            <option value disabled selected>Select your dish</option>
+            <option value="idly">Idly</option>
+            <option value="dosa">Dosa</option>
+            <option value="vada">Vada</option>
+            <option value="pongal">Pongal</option>
+            <option value="puttu">Puttu</option>
+            <option value="coffee">Coffee</option>
+            <option value="chai">Chai</option>
+          </select>
+
+          <!-- Recommend radio buttons -->
+          <label class="form-item" for="recommend-radio"
+            >Will you recommend Thattukadai to a friend?</label
+          >
+          <div class="form-item">
+            <input
+              type="radio"
+              class="input-radio"
+              name="recommend-radio"
+              value="definitely"
+            />
+            Definitely
+            <input
+              type="radio"
+              class="input-radio"
+              name="recommend-radio"
+              value="maybe"
+            />
+            Maybe
+            <input
+              type="radio"
+              class="input-radio"
+              name="recommend-radio"
+              value="no"
+            />
+            Don't think so
+          </div>
+
+          <!-- Additional thoughts -->
+          <label
+            for="additional-thoughts"
+            id="additional-thoughts-label"
+            class="form-item"
+            >Is there anything else you want to tell us about your visit?</label
+          >
+          <textarea
+            name="additional-thoughts"
+            class="form-item input-area"
+            id=""
+            cols="10"
+            rows="10"
+          ></textarea>
+
+          <input
+            type="submit"
+            class="form-item btn"
+            value="Submit review"
+            id="submit"
+          />
+        </form>
+      </main>
+      <footer>
+        Background wallpaper by
+        <a
+          style='background-color:black;color:white;text-decoration:none;padding:4px 6px;font-family:-apple-system, BlinkMacSystemFont, "San Francisco", "Helvetica Neue", Helvetica, Ubuntu, Roboto, Noto, "Segoe UI", Arial, sans-serif;font-size:12px;font-weight:bold;line-height:1.2;display:inline-block;border-radius:3px'
+          href="https://unsplash.com/@impatrickt?utm_medium=referral&amp;utm_campaign=photographer-credit&amp;utm_content=creditBadge"
+          target="_blank"
+          rel="noopener noreferrer"
+          title="Download free do whatever you want high-resolution photos from Patrick Tomasso"
+          ><span style="display:inline-block;padding:2px 3px"
+            ><svg
+              xmlns="http://www.w3.org/2000/svg"
+              style="height:12px;width:auto;position:relative;vertical-align:middle;top:-2px;fill:white"
+              viewBox="0 0 32 32"
+            >
+              <title>unsplash-logo</title>
+              <path
+                d="M10 9V0h12v9H10zm12 5h10v18H0V14h10v9h12v-9z"
+              ></path></svg></span
+          ><span style="display:inline-block;padding:2px 3px"
+            >Patrick Tomasso</span
+          ></a
         >
-        <textarea
-          name="additional-thoughts"
-          class="input-area"
-          id=""
-          cols="30"
-          rows="10"
-        ></textarea>
-
-        <input type="submit" value="Submit review" id="submit" />
-      </form>
-    </main>
+      </footer>
+    </div>
     <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
   </body>
 </html>

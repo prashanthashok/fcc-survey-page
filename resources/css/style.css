@@ -4,6 +4,93 @@
   box-sizing: border-box;
 }
 
+html {
+  /* background-image: url("../images/patrick-tomasso-NlcCPeKNmwg-unsplash.jpg"); */
+  background: url("../images/patrick-tomasso-NlcCPeKNmwg-unsplash.jpg")
+    no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+.container {
+  margin: 2% auto;
+  /* display: flex; */
+  /* flex-direction: column; */
+  width: 50vw;
+  height: 90vh;
+  background-color: white;
+  opacity: 0.8;
+  border-radius: 5%;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  width: 50vw;
+
+  font-family: "Open Sans", sans-serif;
+}
+
+h1,
+h3 {
+  text-align: center;
+}
+
+h1 {
+  font-family: "Yeon Sung", cursive;
+  font-size: 3rem;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+
 .form-item {
-  display: block;
+  margin-left: 2%;
+}
+
+.form-input {
+  width: 70%;
+}
+
+.check-box-container {
+  margin-left: 2%;
+}
+
+footer {
+  margin: 2%;
+  text-align: center;
+  font-size: 0.5rem;
+}
+
+.input-area {
+  width: 50%;
+}
+
+.btn {
+  background-color: #f4511e;
+  cursor: pointer;
+  border-radius: 4px;
+  font-size: 1.2rem;
+  margin: 2% auto;
+  padding: 20px;
+  width: 200px;
+}
+
+.form-input,
+.text-area,
+.btn {
+  font-family: "Open Sans", sans-serif;
+}
+
+@media all and (max-width: 839px) {
+  #main {
+    width: 100vw;
+    /* Opera 10.5, IE 9, Firefox 4+, Chrome 6+, iOS 5 */
+  }
 }
